@@ -18,28 +18,61 @@
 		<div class="reveal">
 			<div class="slides">
         <section>
-          <section class="nofooter">
-            <img src="img/iu-logo-top-tail.svg" style="position: absolute; left: 0; top: 0; width: 10%; background: inherit; border: 0; box-shadow: none;" />
-            <h3 style="margin-top: 5%; margin-bottom: 2.5em; margin-left: 13%; text-align: left; font-size: 1.25em; text-transform: uppercase;">
+          <section class="nofooter" data-background-image="img/techex-cover.jpg" data-background-size="contain" data-background-color="#141556">
+            <!-- <img src="img/iu-logo-top-tail.svg" style="position: absolute; left: 0; top: 0; width: 10%; background: inherit; border: 0; box-shadow: none;" /> -->
+            <h3 style="color: white; margin-top: 15%; margin-bottom: 1em; text-align: left; font-size: 1.25em; text-transform: uppercase;">
               Launchpad<br/>
-              <small style="color: #666;">A Platform for Application Development</small>
+              <small style="color: #999;">A Platform for Application Development</small>
             </h3>
-            <div style="float: left; text-align: left; color: #666">
+            <div style="float: left; text-align: left; color: #999">
               <strong>James Bennett</strong><br />
-              <small>Enterprise Platforms, UITS</small>
+              <small>Enterprise Platforms<br />Indiana University</small>
             </div>
           </section>
           <section>
             <h3>Enterprise Platforms</h3>
             <div style="margin-top: 2rem; font-size: .8em;">
-                Combination of several former groups:
-                <ul>
-                  <li>Systems Integration/Middleware</li>
-                  <li>Linux Administration</li>
-                  <li>Database Administration</li>
-                  <li>Cloud Support</li>
-                </ul>
+              <ul>
+                <li class="fragment fade-in-then-semi-out">Part of central IT at IU: UITS</li>
+                <li class="fragment fade-in-then-semi-out">
+                  Combination of several former groups:<br />
+                  <ul>
+                    <li>Systems Integration/Middleware</li>
+                    <li>Linux Administration</li>
+                    <li>Database Administration</li>
+                    <li>Cloud Support</li>
+                  </ul>  
+                </li>
+              </ul>
               </div>
+          </section>
+          <section>
+            <img src="img/goal.jpg" style="width: 80%; margin-top: -2%;" />
+          </section>
+          <section>
+            <h3>A relatable story...</h3>
+            <ul style="font-size: .8em;">
+              <li class="fragment fade-in-then-semi-out">Mid-May 2021 IU HR decides on a new remote work<br />arrangement policy</li>
+              <li class="fragment fade-in-then-semi-out">Need a system to track these arrangements</li>
+              <li class="fragment fade-in-then-semi-out">Requirements lead to the need for a custom application</li>
+              <li class="fragment fade-in-then-semi-out">Opening to all staff and faculty July 1st (~six weeks later)</li>
+            </ul>
+          </section>
+          <section data-background-image="img/cloudy.jpg" class="has-image-credit">
+            <span class="image-credit">Image credit: Dallas Reedy/<a href="https://unsplash.com/photos/F2HTC_CF4Jo">Unsplash.com</a></span>
+          </section>
+          <section data-background-image="img/cloud-architecture.jfif" class="has-image-credit">
+            <span class="image-credit">Image credit: Tim Warner/<a href="https://twitter.com/techtrainertim/status/1438159567104380932">Twitter.com</a></span>
+          </section>
+          <section data-background-image="img/big-red-200.jpg"></section>
+          <section>
+            <h3>Six short weeks</h3>
+            <ul style="font-size: .8em;">
+              <li class="fragment fade-in-then-semi-out">Solution based on <a href="https://platformengineering.org/blog/what-is-platform-engineering">platform engineering</a></li>
+              <li class="fragment fade-in-then-semi-out">Guided by Cloud principles</li>
+              <li class="fragment fade-in-then-semi-out">Focused on developer experience</li>
+              <li class="fragment fade-in-then-semi-out">Opens up a path for migrating central IT workloads<br />to the cloud</li>
+            </ul>
           </section>
         </section>
         <section>
@@ -47,15 +80,19 @@
             <h2 class="textbox">Platform Introduction</h2>
           </section>
           <section>
-            <img src="img/goal.jpg" style="width: 80%; margin-top: -2%;" />
-          </section>
-          <section>
-            <blockquote style="text-align: left; font-size: 1.5rem;">
+            <blockquote cite="https://martinfowler.com/articles/talk-about-platforms.html" style="text-align: left; font-size: 1.5rem;">
               &ldquo;A <strong>digital platform</strong> is a foundation of <span class="fragment highlight-current-red">self-service APIs, tools, services, knowledge and support</span> which are arranged as a compelling internal product. Autonomous delivery teams can make use of the platform to deliver product features at a higher pace, with reduced co-ordination.&rdquo;
             </blockquote>
+            <div style="text-align: right; font-size: 1.5rem; font-style: italic; width: 70%; margin: 0 auto">
+              &mdash; <a href="https://martinfowler.com/articles/talk-about-platforms.html">Evan Bottcher</a>
+            </div>
           </section>
-          <section data-background-image="img/building-blocks.jpg"></section>
-          <section data-background-image="img/lego-space.webp"></section>
+          <section data-background-image="img/building-blocks.jpg" class="has-image-credit">
+            <span class="image-credit">Image credit: Mourizal Zativa/<a href="https://unsplash.com/photos/gNMVpAPe3PE">Unsplash.com</a></span>
+          </section>
+          <section data-background-image="img/lego-space.webp" class="has-image-credit">
+            <span class="image-credit">Image credit: Elizabeth Howell/<a href="https://www.space.com/lego-nasa-space-shuttle-discovery-hubble-set-review">Space.com</a></span>
+          </section>
         </section>
         <section>
           <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
@@ -64,7 +101,7 @@
                 <h3 style="margin-top: 1em;">Why a platform?</h3>
                 <ul style="font-size: .8em;">
                   <li class="fragment fade-in-then-semi-out" data-fragment-index="1">Empower development teams</li>
-                  <li class="fragment fade-in-then-semi-out" data-fragment-index="2">Reduce cognitive load</li>
+                  <li class="fragment fade-in-then-semi-out" data-fragment-index="2">Reduce <a href="https://itrevolution.com/articles/cognitive-load/">cognitive load</a></li>
                   <li class="fragment fade-in-then-semi-out" data-fragment-index="3">Tie everything together</li>
                   <li class="fragment fade-in-then-semi-out" data-fragment-index="4">Amplify best practices</li>
                   <li class="fragment fade-in-then-semi-out" data-fragment-index="5">Take full advantage of our infrastructure</li>
@@ -73,7 +110,7 @@
               <div class="right">
                 <div class="r-stack">
                   <img src="img/empower-devs.jpg" style="width: 80%; margin-top: 10%;" class="fragment fade-in-then-out" data-fragment-index="1" />
-                  <a href="https://roadmap.sh/devops" target="_blank" class="fragment fade-in-then-out" data-fragment-index="2"><img src="https://roadmap.sh/roadmaps/devops.png" style="width: auto; height: 50vh;" /></a>
+                  <a href="https://roadmap.sh/devops" target="_blank" class="fragment fade-in-then-out" data-fragment-index="2"><img src="https://roadmap.sh/roadmaps/devops.png" style="width: auto; height: 70vh;" /></a>
                   <img src="img/old-tomcat-setup.png" style="width: 80%; margin-top: 10%;" class="fragment fade-in-then-out" data-fragment-index="3" />
                   <img src="img/best-practices.png" style="width: 80%; margin-top: 10%;" class="fragment fade-in-then-out" data-fragment-index="4" />
                   <img src="img/assembly-line.png" style="width: 80%; margin-top: 10%;" class="fragment fade-in-then-out" data-fragment-index="5" />
@@ -91,8 +128,8 @@
             <ul style="margin-top: 2rem; font-size: .8em;">
               <li class="fragment fade-in-then-semi-out">Single stop for all services</li>
               <li class="fragment fade-in-then-semi-out">Related documentation pulled together for easy<br /> consumption</li>
-              <li class="fragment fade-in-then-semi-out">Support forms built with Fireform</li>
-              <li class="fragment fade-in-then-semi-out">Eventually connected to workflows to automate</li>
+              <li class="fragment fade-in-then-semi-out">Support forms built with low-code system (Fireform)</li>
+              <li class="fragment fade-in-then-semi-out">Connected to workflows to automate (<a href="https://argoproj.github.io/">Argo</a>)</li>
             </ul>
           </section>
           <section>
@@ -122,6 +159,25 @@
           </section>
           <section data-background-video="img/jigsaw-puzzle.mp4"></section>
           <section>
+            <h3>🎵 Woah, we're halfway there</h3>
+            <ul style="font-size: .8em;">
+              <li class="fragment fade-in-then-semi-out">Delivered a project skeleton and infrastructure<br />components iteratively</li>
+              <li class="fragment fade-in-then-semi-out">Everything delivered shortly after Memorial Day</li>
+              <li class="fragment fade-in-then-semi-out">
+                Developers focused on development
+                <ul style="font-size: .8em;">
+                  <li>Worked with user experience group on design</li>
+                  <li>Accessibility review</li>
+                  <li>Security review</li>
+                  <li>Automated testing (after the release)</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section data-background-image="img/laying-track.gif" data-background-size="contain" data-background-color="#a1795f" class="has-image-credit">
+            <span class="image-credit">Wallace & Gromit: The Wrong Trousers</span>
+          </section>
+          <!-- <section>
             <h3>More detail</h3>
             <ul style="margin-top: 2rem; font-size: .8em;">
               <li class="fragment fade-in-then-semi-out">Built with Kubernetes using reusable templates</li>
@@ -129,7 +185,7 @@
               <li class="fragment fade-in-then-semi-out">Event-driven architecture based on the operator pattern</li>
               <li class="fragment fade-in-then-semi-out">Composing well-established components together</li>
             </ul>
-          </section>
+          </section> -->
         </section>
         <section>
           <section data-background-image="img/takeoff.jpg">
@@ -174,7 +230,7 @@
                   <img src="img/maintenance-007.png" style="width: 80%; margin-top: 5%;" class="fragment fade-in-then-out" data-fragment-index="8" />
                   <img src="img/maintenance-dependencies.png" style="width: 80%; margin-top: 5%;" class="fragment fade-in-then-out" data-fragment-index="9" />
                   <img src="img/maintenance-config.png" style="width: 80%; margin-top: 5%;" class="fragment fade-in-then-out" data-fragment-index="10" />
-                  <img src="img/maintainability.png" style="width: 60%; margin-top: 5%;" class="fragment fade-in" data-fragment-index="11" />
+                  <img src="img/maintainability.png" style="width: 80%; margin-top: 5%;" class="fragment fade-in" data-fragment-index="11" />
                 </div>
               </div>
             </div>
@@ -200,7 +256,7 @@
               <div class="left">
                 <h3>Security</h3>
                 <ul style="font-size: .8em;">
-                  <li class="fragment fade-in-then-semi-out">Role-based security model</li>
+                  <li class="fragment fade-in-then-semi-out">Role-based security model based on Grouper and midPoint</li>
                   <li class="fragment fade-in-then-semi-out">Provision access to all components</li>
                   <li class="fragment fade-in-then-semi-out">Platform managed secrets</li>
                   <li class="fragment fade-in-then-semi-out">Hardened delivery chain</li>
@@ -242,16 +298,51 @@
               </div>
             </div>
           </section>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1.5em;">Retention?</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">Upskilling current team</li>
+                  <li class="fragment fade-in-then-semi-out">Overwhelmingly positive feedback</li>
+                </ul>
+              </div>
+              <div class="right">
+                <img src="img/retention.png" style="width: 100%; margin-top: 5%;" />
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>🎵 It's the final countdown</h3>
+            <ul style="font-size: .8em;">
+              <li class="fragment fade-in-then-semi-out">App was delivered in production a week early</li>
+              <li class="fragment fade-in-then-semi-out">Three more apps delivered since in this area</li>
+              <li class="fragment fade-in-then-semi-out">Most stable applications they maintain</li>
+              <li class="fragment fade-in-then-semi-out">No death march</li>
+              <li class="fragment fade-in-then-semi-out">Working to replicate this at scale</li>
+            </ul>
+          </section>
+          <section>
+            <h3>What about the Cloud?</h3>
+            <ul style="font-size: .8em;">
+              <li class="fragment fade-in-then-semi-out">Containerization is our path to the Cloud</li>
+              <li class="fragment fade-in-then-semi-out">Abstractions/social contracts we have in place helps<br /> us prepare</li>
+              <li class="fragment fade-in-then-semi-out">Upskilling reduces the anxiety about moving</li>
+              <li class="fragment fade-in-then-semi-out">Supporting this kind of infrastructure in the Cloud<br />is part of our strategic plan</li>
+            </ul>
+          </section>
         </section>
         <section data-background-image="img/questions.jpg">
-          <h2 class="textbox">Questions?</h2>
+          <h2 class="textbox">Demo/Questions?</h2>
 
-          <a href="https://go.iu.edu/platform" style="color: white;"><small>https://go.iu.edu/platform</small></a>
+          <!-- <a href="https://go.iu.edu/platform" style="color: white;"><small>https://go.iu.edu/platform</small></a> -->
         </section>
         <div id="footer" class="footer" style="display: none;">
-          <img src="img/iu-logo.svg" />
-          <span style="text-align: left; width: 15em; margin-top: 1%;">Statewide IT 2022</span>
+          <!-- <img src="img/iu-logo.svg" />
+          <span style="text-align: left; width: 15em; margin-top: 1%;">Internet2 TechEx 2022</span> -->
+          <img src="img/techex-footer.png" style="width: 35%;" />
         </div>
+        <div id="image-credit"></div>
 			</div>
     </div>
     <div id="background" style="display: none;"></div>
@@ -286,6 +377,15 @@
 					document.getElementById('background').style.display = 'none';
 				} else {
 					document.getElementById('background').style.display = 'block';
+        }
+
+        var showImageCredit = event.currentSlide.classList.contains('has-image-credit');
+        if(showImageCredit) {
+          document.getElementById('image-credit').innerHTML = event.currentSlide.getElementsByClassName('image-credit')[0].innerHTML;
+          document.getElementById('image-credit').style.display = 'block';
+        } else {
+          document.getElementById('image-credit').innerHTML = null;
+          document.getElementById('image-credit').style.display = 'none';
         }
 			} );
 		</script>

@@ -125,6 +125,20 @@ $selectionColor: #fff;
   }
 }
 
+.image-credit {
+  display: none;
+}
+
+#image-credit {
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+  font-size: .75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white !important;
+  padding: 4px 8px;
+}
+
 .textbox {
   background: rgba(0, 0, 0, 0.6);
   color: white !important;
